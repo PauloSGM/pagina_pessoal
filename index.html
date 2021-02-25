@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/sweetalert.css">
 
 </head>
 
@@ -379,7 +380,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <form id="contact-form" action="#" method="POST">
+                                <form id="contact-form" name="contact" netlify>
                                     <div class="row">
                                         <div class="col-lg-4 col-md-6">
                                             <div class="form-box user-icon mb-25">
@@ -402,7 +403,7 @@
                                                     placeholder="Como posso te ajudar?"></textarea>
                                             </div>
                                             <div class="submit-info">
-                                                <button class="submit-btn2" name="enviar" type="submit">Enviar</button>
+                                                <button class="submit-btn2" onclick="mensagem()" name="enviar" type="submit">Enviar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -412,6 +413,7 @@
                     </div>
                 </div>
             </div>
+            
             <!-- rodapé -->
             <div class="footer-bottom-area">
                 <div class="container">
@@ -475,6 +477,7 @@
     <script src="./assets/js/jquery.validate.min.js"></script>
     <script src="./assets/js/mail-script.js"></script>
     <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="./assets/js/sweetalert.js"></script>
 
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
